@@ -1,0 +1,13 @@
+{
+  "name": "Sparkle & Shine",
+  "short_name": "Sparkle & Shine",
+  "description": "Design for events in the Bronx, NYC.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FDF3E4",
+  "theme_color": "#000000",
+  "icons": [
+    { "src": "/assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

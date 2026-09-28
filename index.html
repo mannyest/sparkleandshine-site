@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sparkle &amp; Shine — Design for Events in the Bronx, NYC</title>
+<meta name="description" content="Sparkle and Shine is a design service in the Bronx, NYC. Custom invitations, flyers and event designs, made to order and emailed back to you in a few days.">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://sparkleandshine.party/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sparkle &amp; Shine — Design for Events in the Bronx, NYC">
+<meta property="og:description" content="Custom invitations, flyers and event designs, made to order right here in the Bronx.">
+<meta property="og:url" content="https://sparkleandshine.party/">
+<meta property="og:image" content="https://sparkleandshine.party/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sparkle and Shine — design for events, Bronx NYC">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preload" href="/assets/fonts/baloo2-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/rokkitt-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<script>document.documentElement.classList.add("js");</script>
+
+<style>
+/* ============================================================
+   Fonts — self-hosted variable woff2, so the page has no
+   third-party requests and nothing to wait on but itself.
+   ============================================================ */
+@font-face{
+  font-family:"Baloo 2 Variable";font-style:normal;font-display:swap;font-weight:400 800;
+  src:url(/assets/fonts/baloo2-latin.woff2) format("woff2-variations");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:"Baloo 2 Variable";font-style:normal;font-display:swap;font-weight:400 800;
+  src:url(/assets/fonts/baloo2-latin-ext.woff2) format("woff2-variations");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face{
+  font-family:"Rokkitt Variable";font-style:normal;font-display:swap;font-weight:100 900;
+  src:url(/assets/fonts/rokkitt-latin.woff2) format("woff2-variations");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:"Rokkitt Variable";font-style:normal;font-display:swap;font-weight:100 900;
+  src:url(/assets/fonts/rokkitt-latin-ext.woff2) format("woff2-variations");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+/* ============================================================
+   Sparkle & Shine — tokens
+   Palette sampled directly from the Canva design.
+   ============================================================ */
+:root{
+  --ink:#141414;
+  --black:#000;
+  --cream:#F6F7EB;
+  --sand:#F0D4BC;
+  /* Canva's outline is #785C44; 10% darker clears 3:1 against the bluest
+     part of the gradient, where the hero headline sits. Visually identical. */
+  --sand-outline:#6C533D;
+  --lilac:#F4D2F7;
+  --babyblue:#C5ECFF;
+  --sky:#B2DAF4;
+  --coral:#FFAE9C;
+  --pink:#FFBBD2;
+  --butter:#FFF292;
+  --butter-deep:#EFCB6B;
+  --mint:#C7EFE7;
+  --sage:#B9D6A1;
+  --blush:#FFD6E0;
+
+  --display:"Baloo 2 Variable","Trebuchet MS",system-ui,sans-serif;
+  --body:"Rokkitt Variable",Georgia,"Times New Roman",serif;
+
+  --header-h:60px;
+  --wrap:1180px;
+  --gutter:clamp(18px,5vw,56px);
+  --radius:22px;
+}
+@media (min-width:900px){ :root{ --header-h:74px; } }
+
+/* ============================================================
+   Reset
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body,h1,h2,h3,h4,p,figure,ul,ol,dl,dd{margin:0;}
+/* every list on this page is navigation or layout, never prose */
+nav ul,nav ol,ul[class],ol[class],.site-footer ul{list-style:none;padding:0;}
+img,svg{display:block;max-width:100%;}
+img{height:auto;}
+button,input,select,textarea{font:inherit;color:inherit;}
+:where(a){color:inherit;}
+
+html{
+  scroll-behavior:smooth;
+  /* stop the sticky header covering a section you jump to */
+  scroll-padding-top:calc(var(--header-h) + 12px);
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;}
+}
+
+html{background:#FDF3E4;}
+body{
+  font-family:var(--body);
+  font-weight:400;
+  font-size:clamp(1.02rem,.96rem + .42vw,1.22rem);
+  line-height:1.55;
+  color:var(--ink);
+  overflow-x:hidden; /* belt and braces against a stray wide child */
+}
+
+/* ============================================================
+   Utilities
+   ============================================================ */
+.wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gutter);}
+.visually-hidden{
+  position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0;
+}
+.skip-link{
+  position:absolute;left:8px;top:-60px;z-index:200;
+  background:var(--butter);color:#000;padding:.7em 1.1em;border-radius:0 0 12px 12px;
+  font-family:var(--display);font-weight:700;text-decoration:none;
+  transition:top .18s ease;
+}
+.skip-link:focus{top:0;}
+
+:where(a,button,input,select,textarea,summary):focus-visible{
+  outline:3px solid #1F5FD0;
+  outline-offset:3px;
+  border-radius:6px;
+}
+/* on the black bar a blue ring is invisible — use butter instead */
+.site-header :where(a,button):focus-visible,
+.site-footer :where(a,button):focus-visible{outline-color:var(--butter);}
+
+/* ============================================================
+   The gradient — a CSS mesh rebuild of the Canva background,
+   layered radial gradients over a linear base.
+
+   It lives on one fixed, full-viewport layer behind the whole
+   page rather than repeating per section. Giving each section
+   its own copy left a hard blue-under-cream seam at every join;
+   this way the full palette is on screen at all times and the
+   content scrolls over it. position:fixed is used instead of
+   background-attachment:fixed, which iOS Safari ignores.
+   ============================================================ */
+.page-bg{
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background-color:#F7E3D2;
+  background-image:
+    radial-gradient(62% 46% at 6% 4%,   #6FABFC 0%, rgba(111,171,252,0) 72%),
+    radial-gradient(58% 42% at 97% 3%,  #9BADED 0%, rgba(155,173,237,0) 74%),
+    radial-gradient(74% 46% at 52% 47%, #F9D3DB 0%, rgba(249,211,219,0) 74%),
+    radial-gradient(52% 44% at 0% 56%,  #A8D2C8 0%, rgba(168,210,200,0) 72%),
+    radial-gradient(66% 52% at 4% 100%, #FFFCF3 0%, rgba(255,252,243,0) 74%),
+    radial-gradient(62% 46% at 98% 99%, #D8F3E5 0%, rgba(216,243,229,0) 72%),
+    linear-gradient(168deg,#8FB6F5 0%,#C3C4E8 27%,#F6D6D9 51%,#FDE6CF 76%,#FDF3E4 100%);
+}
+/* everything real sits above the gradient layer */
+main,.site-footer{position:relative;z-index:1;}
+
+/* ============================================================
+   Header
+   ============================================================ */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:var(--black);
+  padding-top:env(safe-area-inset-top);
+}
+.header-inner{
+  min-height:var(--header-h);
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+}
+
+.logo{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(1.38rem,1.05rem + 1.5vw,2rem);
+  line-height:1;letter-spacing:-.005em;
+  text-decoration:none;white-space:nowrap;
+  display:inline-flex;align-items:baseline;gap:.22em;
+  padding-block:.45em;
+  min-height:44px;
+}
+.logo .s1{color:var(--lilac);}
+.logo .amp{color:var(--babyblue);}
+.logo .s2{color:var(--cream);}
+
+/* --- desktop nav --- */
+.nav-desktop{display:none;}
+@media (min-width:900px){
+  .nav-desktop{display:block;}
+  .nav-desktop ul{display:flex;align-items:center;gap:clamp(1rem,2.1vw,2.1rem);}
+  .nav-desktop a{
+    color:var(--cream);text-decoration:none;
+    font-size:1.05rem;font-weight:400;letter-spacing:.01em;
+    padding:.5em .15em;display:inline-block;position:relative;
+  }
+  .nav-desktop a::after{
+    content:"";position:absolute;left:0;right:0;bottom:.22em;height:2px;
+    background:var(--butter);transform:scaleX(0);transform-origin:left;
+    transition:transform .2s ease;
+  }
+  .nav-desktop a:hover::after,.nav-desktop a:focus-visible::after{transform:scaleX(1);}
+}
+
+/* --- mobile menu --- */
+.menu-toggle{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+  background:transparent;border:2px solid rgba(246,247,235,.35);
+  color:var(--cream);border-radius:12px;
+  /* 44px minimum touch target */
+  min-height:44px;min-width:44px;padding:0 .75em;
+  font-family:var(--display);font-weight:700;font-size:.95rem;
+  cursor:pointer;
+}
+.menu-toggle:hover{border-color:var(--butter);}
+@media (min-width:900px){ .menu-toggle{display:none;} }
+
+.burger{width:20px;height:14px;position:relative;flex:0 0 auto;}
+.burger span{
+  position:absolute;left:0;right:0;height:2.5px;border-radius:2px;background:currentColor;
+  transition:transform .22s ease,opacity .18s ease;
+}
+.burger span:nth-child(1){top:0;}
+.burger span:nth-child(2){top:5.75px;}
+.burger span:nth-child(3){bottom:0;}
+[aria-expanded="true"] .burger span:nth-child(1){transform:translateY(5.75px) rotate(45deg);}
+[aria-expanded="true"] .burger span:nth-child(2){opacity:0;}
+[aria-expanded="true"] .burger span:nth-child(3){transform:translateY(-5.75px) rotate(-45deg);}
+
+.nav-mobile{
+  background:var(--black);
+  border-top:1px solid rgba(246,247,235,.14);
+  display:none;
+  padding-bottom:max(.5rem,env(safe-area-inset-bottom));
+}
+.nav-mobile.is-open{display:block;}
+@media (min-width:900px){ .nav-mobile{display:none!important;} }
+.nav-mobile a{
+  display:block;color:var(--cream);text-decoration:none;
+  padding:.92em .2em;font-size:1.12rem;
+  border-bottom:1px solid rgba(246,247,235,.1);
+}
+.nav-mobile li:last-child a{border-bottom:0;}
+.nav-mobile a:hover{color:var(--butter);}
+
+/* ============================================================
+   Sections + headings
+   ============================================================ */
+.section{padding-block:clamp(3.2rem,8vw,6.2rem);}
+.section > .wrap{position:relative;z-index:1;}
+
+.sec-title{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(2.6rem,1.5rem + 6.4vw,5.6rem);
+  line-height:.98;letter-spacing:-.01em;
+  color:var(--sand);
+  margin-bottom:.34em;
+  filter:drop-shadow(0 4px 5px rgba(90,65,45,.2));
+}
+/* paint-order keeps the stroke behind the fill, so the letters stay
+   chunky instead of being eaten by their own outline */
+@supports (paint-order:stroke){
+  .sec-title{
+    -webkit-text-stroke:.085em var(--sand-outline);
+    paint-order:stroke fill;
+  }
+}
+/* fallback for the few engines without paint-order */
+@supports not (paint-order:stroke){
+  .sec-title{
+    text-shadow:
+      -2px -2px 0 var(--sand-outline), 2px -2px 0 var(--sand-outline),
+      -2px  2px 0 var(--sand-outline), 2px  2px 0 var(--sand-outline),
+       0   -3px 0 var(--sand-outline), 0    3px 0 var(--sand-outline),
+      -3px  0   0 var(--sand-outline), 3px  0   0 var(--sand-outline);
+  }
+}
+
+.lede{max-width:42ch;font-size:1.06em;}
+.eyebrow{
+  font-family:var(--body);font-weight:600;
+  display:flex;flex-wrap:wrap;align-items:center;gap:.55em;
+  font-size:clamp(.95rem,.9rem + .3vw,1.12rem);
+  letter-spacing:.02em;margin-bottom:1.6rem;
+}
+.eyebrow .dot{width:.42em;height:.42em;border-radius:50%;background:var(--ink);flex:0 0 auto;}
+
+/* ============================================================
+   Buttons
+   ============================================================ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+  min-height:52px;padding:.7em 1.5em;
+  font-family:var(--display);font-weight:800;
+  font-size:1.06rem;line-height:1;text-decoration:none;
+  color:#161616;background:var(--butter);
+  border:2.5px solid #161616;border-radius:999px;
+  box-shadow:0 4px 0 #161616;
+  cursor:pointer;
+  transition:transform .12s ease,box-shadow .12s ease,background .15s ease;
+}
+.btn:hover{background:#FFE86B;transform:translateY(-1px);box-shadow:0 5px 0 #161616;}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 #161616;}
+.btn--ghost{background:var(--cream);}
+.btn--ghost:hover{background:#fff;}
+
+/* ============================================================
+   Hero
+   ============================================================ */
+.hero-grid{display:grid;gap:clamp(2.2rem,5vw,3.6rem);align-items:center;}
+@media (min-width:900px){
+  .hero-grid{grid-template-columns:1.05fr .95fr;}
+}
+.hero-title{margin-bottom:.3em;}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:1.9rem;}
+.hero-art{max-width:520px;width:100%;margin-inline:auto;}
+@media (min-width:900px){ .hero-art{margin-inline:0 auto;} }
+
+/* ============================================================
+   Services
+   ============================================================ */
+.cards{
+  display:grid;gap:clamp(1rem,2.4vw,1.5rem);
+  grid-template-columns:1fr;
+  margin-top:2.4rem;
+}
+@media (min-width:640px){ .cards{grid-template-columns:repeat(3,1fr);} }
+.card{
+  background:rgba(255,253,247,.72);
+  border:2.5px solid #161616;
+  border-radius:var(--radius);
+  box-shadow:0 5px 0 rgba(22,22,22,.85);
+  padding:clamp(1.3rem,3vw,1.9rem);
+  display:flex;flex-direction:column;gap:.5rem;
+}
+.card h3{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(1.3rem,1.15rem + .6vw,1.65rem);line-height:1.1;
+}
+.card p{font-size:.98em;}
+.card-icon{width:46px;height:46px;margin-bottom:.35rem;}
+
+/* ============================================================
+   Steps
+   ============================================================ */
+.steps-grid{display:grid;gap:clamp(2rem,5vw,3.4rem);align-items:start;}
+@media (min-width:900px){ .steps-grid{grid-template-columns:.85fr 1.15fr;} }
+.steps{display:flex;flex-direction:column;gap:clamp(1.4rem,3.4vw,2.3rem);}
+.step{display:grid;grid-template-columns:auto 1fr;gap:clamp(.9rem,2.6vw,1.6rem);align-items:start;}
+.step-num{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(2.1rem,1.4rem + 3.1vw,3.4rem);
+  line-height:1;color:var(--sky);
+  -webkit-text-stroke:.055em #16384C;
+  paint-order:stroke fill;
+  filter:drop-shadow(0 3px 3px rgba(20,50,70,.22));
+}
+@supports not (paint-order:stroke){
+  .step-num{-webkit-text-stroke:0;text-shadow:-2px 2px 0 #16384C,2px 2px 0 #16384C,-2px -2px 0 #16384C,2px -2px 0 #16384C;}
+}
+.step p{margin-top:.15em;}
+
+/* ============================================================
+   About
+   ============================================================ */
+.about-grid{display:grid;gap:clamp(2rem,5vw,3.4rem);align-items:center;}
+@media (min-width:900px){ .about-grid{grid-template-columns:1.1fr .9fr;} }
+.portrait{
+  max-width:360px;width:100%;margin-inline:auto;
+  border:3px solid #161616;border-radius:var(--radius);
+  box-shadow:0 6px 0 rgba(22,22,22,.85);
+  overflow:hidden;background:var(--cream);
+}
+/* the portrait is a transparent cut-out, so the card supplies its own
+   backdrop — a soft blush-to-cream wash from the site palette */
+.portrait-img{
+  background:
+    radial-gradient(115% 85% at 50% 6%, #FFE7EF 0%, rgba(255,231,239,0) 72%),
+    linear-gradient(172deg,#FFDCE8 0%,#FFEFE2 58%,#FFFBF2 100%);
+}
+.portrait img{width:100%;}
+.portrait figcaption{
+  background:var(--cream);border-top:3px solid #161616;
+  padding:.85rem 1rem;text-align:center;
+}
+.portrait .name{
+  display:block;font-family:var(--display);font-weight:800;
+  font-size:clamp(1.4rem,1.2rem + .8vw,1.85rem);line-height:1.1;
+}
+.portrait .role{display:block;font-weight:600;font-size:.98rem;}
+
+/* ============================================================
+   Collab
+   ============================================================ */
+.collab-grid{display:grid;gap:clamp(2rem,5vw,3.4rem);align-items:center;}
+@media (min-width:900px){ .collab-grid{grid-template-columns:1.05fr .95fr;} }
+.partner{
+  display:inline-block;margin-top:1.6rem;
+  background:#000;border:2.5px solid #161616;border-radius:16px;
+  box-shadow:0 5px 0 rgba(22,22,22,.85);
+  padding:clamp(.9rem,2.4vw,1.25rem) clamp(1.1rem,3vw,1.7rem);
+  text-decoration:none;
+  transition:transform .12s ease,box-shadow .12s ease;
+}
+.partner:hover{transform:translateY(-1px);box-shadow:0 6px 0 rgba(22,22,22,.85);}
+.partner:active{transform:translateY(3px);box-shadow:0 1px 0 rgba(22,22,22,.85);}
+.partner img{width:clamp(190px,44vw,260px);}
+
+/* ============================================================
+   Contact form
+   ============================================================ */
+.contact-grid{display:grid;gap:clamp(2rem,5vw,3.4rem);align-items:center;}
+@media (min-width:900px){ .contact-grid{grid-template-columns:1.08fr .92fr;} }
+
+.form-card{
+  background:rgba(255,253,247,.8);
+  border:3px solid #161616;border-radius:var(--radius);
+  box-shadow:0 6px 0 rgba(22,22,22,.85);
+  padding:clamp(1.3rem,3.6vw,2.1rem);
+}
+.field{display:flex;flex-direction:column;gap:.38rem;margin-bottom:1.15rem;}
+.field label{font-weight:600;font-size:1rem;}
+.field .hint{font-size:.88rem;font-weight:400;opacity:.72;}
+.field input,.field select,.field textarea{
+  width:100%;
+  /* 16px minimum stops iOS Safari zooming the page on focus */
+  font-size:16px;font-family:var(--body);
+  padding:.72em .85em;min-height:50px;
+  background:#FFFDF8;color:var(--ink);
+  border:2px solid #4A4A4A;border-radius:12px;
+  -webkit-appearance:none;appearance:none;
+}
+.field textarea{min-height:130px;resize:vertical;line-height:1.5;}
+.field select{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%23161616' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 1rem center;padding-right:2.7rem;
+}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#1F5FD0;}
+.field input[aria-invalid="true"],.field textarea[aria-invalid="true"]{border-color:#B3261E;}
+.err{color:#8C1D18;font-size:.9rem;font-weight:600;min-height:0;}
+
+/* honeypot — hidden from people, visible to naive bots */
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden;}
+
+.form-status{margin-top:1rem;font-weight:600;}
+.form-status:empty{margin-top:0;}
+
+/* the confirmation that replaces the form */
+[hidden]{display:none !important;}
+.form-done{text-align:center;}
+.form-done:focus{outline:none;}
+.form-done:focus-visible{outline:3px solid #1F5FD0;outline-offset:3px;}
+.done-star{width:clamp(56px,14vw,72px);margin:0 auto .9rem;}
+.form-done h3{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(1.6rem,1.3rem + 1.4vw,2.1rem);
+  line-height:1.1;margin-bottom:.35em;
+}
+.form-done p{margin-bottom:1.5rem;}
+.form-done strong{font-weight:600;overflow-wrap:anywhere;}
+.form-status[data-state="ok"]{color:#0B5F2B;}
+.form-status[data-state="error"]{color:#8C1D18;}
+
+.contact-art,.collab-art{max-width:380px;width:100%;margin-inline:auto;}
+/* the width/height attributes on these SVGs are only an aspect ratio —
+   let them fill whatever column they're given */
+.hero-art svg,.collab-art svg,.contact-art svg{width:100%;height:auto;}
+
+/* ============================================================
+   Large screens
+
+   Below this the layout is the single mobile column. Here the
+   hero is given the whole first screen and the illustrations are
+   sized up — at laptop width and beyond they were small objects
+   adrift in a lot of empty column.
+   ============================================================ */
+@media (min-width:900px){
+  #top{
+    min-height:calc(100vh - var(--header-h));
+    min-height:calc(100svh - var(--header-h));
+    display:flex;align-items:center;
+    padding-block:clamp(2.5rem,6vh,5rem);
+  }
+  .hero-art{max-width:600px;}
+  .collab-art{max-width:430px;margin-inline:0 auto;}
+  .contact-art{max-width:430px;}
+  .portrait{max-width:420px;}
+  .card p{font-size:1em;}
+}
+@media (min-width:1500px){
+  :root{--wrap:1280px;}
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.site-footer{
+  background:var(--black);color:var(--cream);
+  padding-block:clamp(2.6rem,6vw,3.8rem);
+  padding-bottom:max(clamp(2.6rem,6vw,3.8rem),env(safe-area-inset-bottom));
+}
+.footer-grid{display:grid;gap:clamp(2rem,5vw,3rem);}
+@media (min-width:760px){ .footer-grid{grid-template-columns:1.2fr 1fr 1fr;} }
+.footer-logo{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(1.7rem,1.3rem + 2vw,2.5rem);line-height:1;
+}
+.footer-logo .s1{color:var(--lilac);}
+.footer-logo .amp{color:var(--babyblue);}
+.footer-logo .s2{color:var(--cream);}
+.tagline{margin-top:.7rem;font-size:1rem;opacity:.9;max-width:22ch;}
+.site-footer h2{
+  font-family:var(--display);font-weight:700;
+  font-size:1.2rem;margin-bottom:.7rem;color:var(--butter);
+}
+.site-footer li{margin-bottom:.15rem;}
+/* inline-block + vertical padding gives footer links a real tap target
+   on a phone; as plain inline text they were only 19px tall */
+.site-footer li a{
+  display:inline-block;
+  padding-block:.55rem;
+  min-height:44px;
+  text-decoration:none;
+}
+.site-footer li:not(:has(a)){padding-block:.55rem;}
+.site-footer a:hover{color:var(--butter);text-decoration:underline;}
+.legal{
+  margin-top:clamp(2rem,5vw,2.8rem);padding-top:1.3rem;
+  border-top:1px solid rgba(246,247,235,.16);
+  font-size:.9rem;opacity:.72;
+  display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;
+}
+
+/* ============================================================
+   Bunting motion
+
+   The banner strings itself up on load, then settles into a
+   breeze that never stops. Each flag lags .28s behind the one to
+   its left, which is what makes it read as one gust travelling
+   along the string rather than four flags bobbing together.
+
+   transform-box:fill-box makes transform-origin resolve against
+   each flag's own box, so `50% 0` is the point it hangs from.
+   Only transform and stroke-dashoffset animate, so this stays on
+   the compositor and costs nothing on a phone.
+   ============================================================ */
+.hero-art{
+  --flag-amp:3.6deg;    /* how far each flag tilts */
+  --flag-period:4.2s;   /* one full swing, out and back */
+}
+.banner,.flag-drop,.flag-swing{transform-box:fill-box;transform-origin:50% 0;}
+
+@keyframes bunting-draw{ from{stroke-dashoffset:1;} to{stroke-dashoffset:0;} }
+@keyframes flag-drop{
+  0%  {transform:translateY(-32px) rotate(-20deg);opacity:0;}
+  50% {opacity:1;}
+  68% {transform:translateY(0) rotate(8deg);}
+  84% {transform:translateY(0) rotate(-3.5deg);}
+  100%{transform:translateY(0) rotate(0deg);opacity:1;}
+}
+@keyframes flag-breeze{
+  0%,100%{transform:rotate(0deg);}
+  25%    {transform:rotate(var(--flag-amp));}
+  75%    {transform:rotate(calc(-1 * var(--flag-amp)));}
+}
+@keyframes banner-sway{
+  0%,100%{transform:rotate(0deg);}
+  33%    {transform:rotate(.4deg);}
+  66%    {transform:rotate(-.4deg);}
+}
+
+.bunting-string{
+  stroke-dasharray:1;
+  animation:bunting-draw .72s ease-out both;
+}
+.flag-drop{
+  animation:flag-drop .62s cubic-bezier(.34,1.28,.64,1) both;
+  animation-delay:calc(.30s + var(--i) * .13s);
+}
+.flag-swing{
+  animation:flag-breeze var(--flag-period) ease-in-out infinite;
+  animation-delay:calc(1.15s + var(--i) * .28s);
+}
+.banner{
+  animation:banner-sway calc(var(--flag-period) * 1.55) ease-in-out infinite;
+  animation-delay:1.15s;
+}
+
+/* ============================================================
+   Stars — a single cheer when a message actually sends.
+   No idle loop: this is feedback, not decoration.
+   ============================================================ */
+.star-pop{transform-box:fill-box;transform-origin:50% 50%;}
+.star-ticks{transform-box:fill-box;transform-origin:50% 50%;}
+/* the pop scales the stars past the viewBox — let them spill instead of
+   being clipped at the edges. There's only empty gradient around them. */
+.contact-art svg{overflow:visible;}
+
+@keyframes star-pop{
+  0%  {transform:scale(1) rotate(0deg);}
+  35% {transform:scale(1.26) rotate(13deg);}
+  62% {transform:scale(.95) rotate(-7deg);}
+  82% {transform:scale(1.04) rotate(2deg);}
+  100%{transform:scale(1) rotate(0deg);}
+}
+@keyframes tick-flash{
+  0%  {opacity:.95;transform:scale(1);}
+  40% {opacity:1;transform:scale(1.22);}
+  100%{opacity:.95;transform:scale(1);}
+}
+.stars-cheer .star-pop{
+  animation:star-pop .8s cubic-bezier(.3,1.35,.55,1) both;
+  animation-delay:calc(var(--i) * .09s);
+}
+.stars-cheer .star-ticks{animation:tick-flash .8s ease-out both;}
+
+/* One switch turns all of the above off for anyone who has asked
+   their device for less motion. The banner is simply there,
+   fully strung, and the stars stay put. */
+@media (prefers-reduced-motion:reduce){
+  .bunting-string{animation:none;stroke-dasharray:none;}
+  .flag-drop,.flag-swing,.banner,
+  .stars-cheer .star-pop,.stars-cheer .star-ticks{animation:none;}
+}
+
+/* ============================================================
+   Gentle entrance — skipped under reduced motion, and gated on
+   the .js class so a script failure can never leave the page
+   permanently blank.
+   ============================================================ */
+@media (prefers-reduced-motion:no-preference){
+  .js .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;}
+  .js .reveal.is-in{opacity:1;transform:none;}
+}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="page-bg" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top">
+      <span class="s1">Sparkle</span><span class="amp">&amp;</span><span class="s2">Shine</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">How we do things</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#collab">Collab</a></li>
+        <li><a href="#contact">Our contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navMobile">
+      <span class="burger" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span>Menu</span>
+    </button>
+  </div>
+
+  <nav class="nav-mobile" id="navMobile" aria-label="Main, mobile">
+    <!-- .wrap sits on a div, not the ul: the list reset zeroes padding on
+         ul[class], which would otherwise cancel the gutter -->
+    <div class="wrap">
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">How we do things</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#collab">Collab</a></li>
+      <li><a href="#contact">Our contact</a></li>
+    </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ========================= HERO ========================= -->
+  <section class="section" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 class="sec-title hero-title">Welcome to<br>Sparkle and Shine!</h1>
+        <p class="lede">Sparkle and Shine is a design service in NYC. Whether it&rsquo;s an invitation or a flyer for a group, we always try to make your order special!</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">Order a design</a>
+          <a class="btn btn--ghost" href="#process">How it works</a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <p class="eyebrow">Design for Events <span class="dot" aria-hidden="true"></span> Bronx <span class="dot" aria-hidden="true"></span> NYC</p>
+        <!-- bunting -->
+        <!-- Each flag is three nested groups: the outer one positions and
+             tilts it (an SVG attribute, so CSS never fights it), then the
+             entrance and the idle breeze get a layer each. -->
+        <svg viewBox="0 0 480 170" role="img" aria-label="Paper bunting in coral, blue, yellow and pink" width="480" height="170">
+          <g class="banner">
+            <path class="bunting-string" pathLength="1" d="M10 30 Q240 120 470 30"
+                  fill="none" stroke="#161616" stroke-width="4" stroke-linecap="round"/>
+            <g transform="translate(102 58.8) rotate(-11)">
+              <g class="flag-drop" style="--i:0"><g class="flag-swing" style="--i:0">
+                <path d="M-31 0 L31 0 L31 64 L0 45 L-31 64 Z" fill="#FFAE9C" stroke="#161616" stroke-width="4" stroke-linejoin="round"/>
+              </g></g>
+            </g>
+            <g transform="translate(194 73.2) rotate(-4)">
+              <g class="flag-drop" style="--i:1"><g class="flag-swing" style="--i:1">
+                <path d="M-31 0 L31 0 L31 64 L0 45 L-31 64 Z" fill="#B2DAF4" stroke="#161616" stroke-width="4" stroke-linejoin="round"/>
+              </g></g>
+            </g>
+            <g transform="translate(286 73.2) rotate(4)">
+              <g class="flag-drop" style="--i:2"><g class="flag-swing" style="--i:2">
+                <path d="M-31 0 L31 0 L31 64 L0 45 L-31 64 Z" fill="#FFEEA6" stroke="#161616" stroke-width="4" stroke-linejoin="round"/>
+              </g></g>
+            </g>
+            <g transform="translate(378 58.8) rotate(11)">
+              <g class="flag-drop" style="--i:3"><g class="flag-swing" style="--i:3">
+                <path d="M-31 0 L31 0 L31 64 L0 45 L-31 64 Z" fill="#FFBBD2" stroke="#161616" stroke-width="4" stroke-linejoin="round"/>
+              </g></g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= SERVICES ========================= -->
+  <section class="section" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <h2 class="sec-title reveal" id="services-title">What we make</h2>
+      <p class="lede reveal">Every order is drawn up from scratch for you &mdash; tell us the colours, the names and the date, and we&rsquo;ll take it from there.</p>
+
+      <div class="cards">
+        <article class="card reveal">
+          <svg class="card-icon" viewBox="0 0 48 48" aria-hidden="true">
+            <rect x="5" y="10" width="38" height="28" rx="4" fill="#FFBBD2" stroke="#161616" stroke-width="3"/>
+            <path d="M5 13l19 14 19-14" fill="none" stroke="#161616" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Invitations</h3>
+          <p>Birthdays, quinceañeras, showers, christenings &mdash; printed or sent straight to phones.</p>
+        </article>
+
+        <article class="card reveal">
+          <svg class="card-icon" viewBox="0 0 48 48" aria-hidden="true">
+            <rect x="9" y="5" width="30" height="38" rx="4" fill="#B2DAF4" stroke="#161616" stroke-width="3"/>
+            <path d="M16 17h16M16 25h16M16 33h9" fill="none" stroke="#161616" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          <h3>Flyers</h3>
+          <p>For a group, a team, a fundraiser or a shop &mdash; something people actually want to pick up.</p>
+        </article>
+
+        <article class="card reveal">
+          <svg class="card-icon" viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M24 5l5.2 12.4L42 19l-9.6 8.6L35 41l-11-6.6L13 41l2.6-13.4L6 19l12.8-1.6z" fill="#FFF292" stroke="#161616" stroke-width="3" stroke-linejoin="round"/>
+          </svg>
+          <h3>Something else?</h3>
+          <p>Got an idea that isn&rsquo;t on this list? Send it over and we&rsquo;ll tell you if we can make it.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= PROCESS ========================= -->
+  <section class="section" id="process" aria-labelledby="process-title">
+    <div class="wrap steps-grid">
+      <div>
+        <h2 class="sec-title reveal" id="process-title">How we<br>do things</h2>
+        <p class="lede reveal">Here we have three easy steps to order and get your design.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step-num" aria-hidden="true">#1</span>
+          <p><span class="visually-hidden">Step 1. </span>Email us about your request and your criteria. We&rsquo;ll work as hard as we can to make your design.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-num" aria-hidden="true">#2</span>
+          <p><span class="visually-hidden">Step 2. </span>Your design takes a few days at most, so it comes out its best.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-num" aria-hidden="true">#3</span>
+          <p><span class="visually-hidden">Step 3. </span>We&rsquo;ll then email the finished result to you and you can tell us if you have any other orders you may want to make.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ========================= ABOUT ========================= -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <div>
+        <h2 class="sec-title reveal" id="about-title">Who you&rsquo;ll see</h2>
+        <p class="lede reveal">One person doing the designs right here in the Bronx, and we&rsquo;ll help you make your designs special.</p>
+      </div>
+
+      <figure class="portrait reveal">
+        <div class="portrait-img">
+          <picture>
+            <source type="image/webp"
+                    srcset="/assets/irelia-560.webp 560w, /assets/irelia-896.webp 896w"
+                    sizes="(min-width:900px) 400px, min(76vw, 360px)">
+            <img src="/assets/irelia-fallback.png" width="896" height="918"
+                 alt="Illustrated portrait of Irelia, the designer behind Sparkle and Shine">
+          </picture>
+        </div>
+        <figcaption>
+          <span class="name">Irelia</span>
+          <span class="role">Creative Designer</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ========================= COLLAB ========================= -->
+  <section class="section" id="collab" aria-labelledby="collab-title">
+    <div class="wrap collab-grid">
+      <div>
+        <h2 class="sec-title reveal" id="collab-title">Collab!</h2>
+        <p class="lede reveal">In collaboration with Cientificos Agency. We&rsquo;ll design your site, and the Cientificos make it go live and promote it to the world!</p>
+        <a class="partner reveal" href="https://cientificosagency.com" rel="noopener">
+          <picture>
+            <source srcset="/assets/cientificos.webp" type="image/webp">
+            <img src="/assets/cientificos.png" width="657" height="169"
+                 alt="Cientificos Agency" loading="lazy" decoding="async">
+          </picture>
+        </a>
+      </div>
+
+      <div class="collab-art reveal">
+        <!-- bouquet -->
+        <svg viewBox="0 0 400 400" role="img" aria-label="A bouquet of pink flowers wrapped in mint paper" width="400" height="400">
+          <defs>
+            <!-- One bloom. The petals are drawn twice: once stroked for the
+                 outer silhouette, then again fill-only on top, which hides
+                 the internal outlines where the petals overlap. -->
+            <g id="bloom">
+              <g fill="#FFD6E0" stroke="#161616" stroke-width="5" stroke-linejoin="round">
+                <circle cx="0" cy="-18" r="13"/><circle cx="17" cy="-6" r="13"/>
+                <circle cx="11" cy="15" r="13"/><circle cx="-11" cy="15" r="13"/>
+                <circle cx="-17" cy="-6" r="13"/>
+              </g>
+              <g fill="#FFD6E0" stroke="none">
+                <circle cx="0" cy="-18" r="13"/><circle cx="17" cy="-6" r="13"/>
+                <circle cx="11" cy="15" r="13"/><circle cx="-11" cy="15" r="13"/>
+                <circle cx="-17" cy="-6" r="13"/>
+              </g>
+              <circle cx="0" cy="0" r="7.5" fill="#FFF292" stroke="#161616" stroke-width="4.5"/>
+            </g>
+          </defs>
+
+          <g stroke="#161616" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+            <!-- leaves around the edge of the spray -->
+            <g fill="#B9D6A1">
+              <ellipse cx="104" cy="146" rx="26" ry="12" transform="rotate(-34 104 146)"/>
+              <ellipse cx="296" cy="146" rx="26" ry="12" transform="rotate(34 296 146)"/>
+              <ellipse cx="132" cy="74"  rx="24" ry="11" transform="rotate(-64 132 74)"/>
+              <ellipse cx="268" cy="72"  rx="24" ry="11" transform="rotate(64 268 72)"/>
+            </g>
+            <!-- little buds -->
+            <g fill="#FFF292">
+              <circle cx="112" cy="182" r="7.5"/><circle cx="288" cy="182" r="7.5"/>
+              <circle cx="200" cy="52"  r="7.5"/>
+              <circle cx="146" cy="112" r="7.5"/><circle cx="254" cy="110" r="7.5"/>
+            </g>
+          </g>
+
+          <!-- blooms, spaced so each one still reads as a flower -->
+          <use href="#bloom" x="140" y="152"/>
+          <use href="#bloom" x="260" y="152"/>
+          <use href="#bloom" x="168" y="88"/>
+          <use href="#bloom" x="232" y="86"/>
+          <use href="#bloom" x="200" y="142"/>
+
+          <g stroke="#161616" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+            <!-- wrap: a soft cone, lighter down the left like the original -->
+            <path d="M98 196 Q200 158 302 196 L240 310 Q200 336 160 310 Z" fill="#C7EFE7"/>
+            <path d="M98 196 Q150 176 200 170 L190 326 Q170 324 160 310 Z" fill="#DDF7F1" stroke="none"/>
+            <path d="M98 196 Q200 158 302 196 L240 310 Q200 336 160 310 Z" fill="none"/>
+            <path d="M184 222 L178 282 M218 222 L224 282" fill="none"/>
+            <!-- paper tail below the neck -->
+            <path d="M182 318 L176 356 Q200 344 224 356 L218 318 Z" fill="#C7EFE7"/>
+            <!-- bow -->
+            <path d="M200 312 C180 294 154 300 158 320 C162 340 188 332 200 312 Z" fill="#FFD6E0"/>
+            <path d="M200 312 C220 294 246 300 242 320 C238 340 212 332 200 312 Z" fill="#FFD6E0"/>
+            <circle cx="200" cy="314" r="10" fill="#FFBBD2"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CONTACT ========================= -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div>
+        <h2 class="sec-title reveal" id="contact-title">Questions?</h2>
+        <p class="lede reveal">Tell us what you need and we&rsquo;ll get back to you. The more you can say about colours, names and dates, the better the first draft will be.</p>
+
+        <form class="form-card reveal" id="contactForm" method="post" action="/api/contact" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required
+                   aria-describedby="name-err">
+            <p class="err" id="name-err" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" inputmode="email"
+                   autocomplete="email" autocapitalize="off" spellcheck="false" required
+                   aria-describedby="email-err">
+            <p class="err" id="email-err" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="kind">What do you need?</label>
+            <select id="kind" name="kind">
+              <option value="Invitation">An invitation</option>
+              <option value="Flyer">A flyer</option>
+              <option value="Something else">Something else</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="eventDate">Date you need it by <span class="hint">(optional)</span></label>
+            <input id="eventDate" name="eventDate" type="date">
+          </div>
+
+          <div class="field">
+            <label for="message">Tell us about it</label>
+            <textarea id="message" name="message" required
+                      placeholder="Colours, names, the occasion, how many you need&hellip;"
+                      aria-describedby="message-err"></textarea>
+            <p class="err" id="message-err" aria-live="polite"></p>
+          </div>
+
+          <!-- honeypot -->
+          <div class="hp" aria-hidden="true">
+            <label for="website">Leave this field empty</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button class="btn" type="submit" id="submitBtn">Send it over</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <!-- Swapped in place of the form once a message sends, so nobody is
+             left staring at a form they've already filled in. -->
+        <!-- deliberately no .reveal class: it is shown by submitting, not by
+             scrolling, and a hidden element never trips the scroll observer -->
+        <div class="form-card form-done" id="formDone" tabindex="-1" hidden>
+          <svg class="done-star" viewBox="0 0 100 100" aria-hidden="true">
+            <g stroke-linejoin="round">
+              <path d="M50 12 L59.4 37.06 L86.14 38.26 L65.22 54.94 L72.34 80.74 L50 66 L27.66 80.74 L34.78 54.94 L13.86 38.26 L40.6 37.06 Z" fill="#161616" stroke="#161616" stroke-width="21"/>
+              <path d="M50 12 L59.4 37.06 L86.14 38.26 L65.22 54.94 L72.34 80.74 L50 66 L27.66 80.74 L34.78 54.94 L13.86 38.26 L40.6 37.06 Z" fill="#EFCB6B" stroke="#EFCB6B" stroke-width="13" transform="translate(3 5)"/>
+              <path d="M50 12 L59.4 37.06 L86.14 38.26 L65.22 54.94 L72.34 80.74 L50 66 L27.66 80.74 L34.78 54.94 L13.86 38.26 L40.6 37.06 Z" fill="#FFF292" stroke="#FFF292" stroke-width="13"/>
+            </g>
+          </svg>
+          <h3>Thank you!</h3>
+          <p>Your message is on its way. We&rsquo;ll reply to <strong id="doneEmail">your email</strong> as soon as we can &mdash; usually within a day.</p>
+          <button class="btn btn--ghost" type="button" id="sendAnother">Send another message</button>
+        </div>
+      </div>
+
+      <!-- The stars hold still until a message actually sends, then cheer
+           once. Nothing here loops. -->
+      <div class="contact-art reveal" id="starArt">
+        <!-- stars -->
+        <svg viewBox="0 0 320 300" role="img" aria-label="Three sparkling stars" width="320" height="300">
+          <defs>
+            <path id="star" d="M50 12 L59.4 37.06 L86.14 38.26 L65.22 54.94 L72.34 80.74 L50 66 L27.66 80.74 L34.78 54.94 L13.86 38.26 L40.6 37.06 Z"/>
+          </defs>
+          <!-- sparkle ticks -->
+          <g class="star-ticks" stroke="#FFFDF5" stroke-width="6" stroke-linecap="round" opacity=".95">
+            <path d="M22 96 L10 88"/><path d="M34 78 L28 64"/><path d="M16 124 L4 124"/>
+            <path d="M28 150 L16 158"/><path d="M52 166 L48 180"/>
+          </g>
+          <g stroke-linejoin="round">
+            <!-- big star, upper right -->
+            <g transform="translate(180 10) scale(1.35)">
+              <g class="star-pop" style="--i:1">
+                <use href="#star" fill="#161616" stroke="#161616" stroke-width="21"/>
+                <use href="#star" fill="#EFCB6B" stroke="#EFCB6B" stroke-width="13" transform="translate(3 5)"/>
+                <use href="#star" fill="#FFF292" stroke="#FFF292" stroke-width="13"/>
+              </g>
+            </g>
+            <!-- small star, left -->
+            <g transform="translate(18 92) scale(.95)">
+              <g class="star-pop" style="--i:0">
+                <use href="#star" fill="#161616" stroke="#161616" stroke-width="21"/>
+                <use href="#star" fill="#EFCB6B" stroke="#EFCB6B" stroke-width="13" transform="translate(3 5)"/>
+                <use href="#star" fill="#FFF292" stroke="#FFF292" stroke-width="13"/>
+              </g>
+            </g>
+            <!-- medium star, lower right -->
+            <g transform="translate(150 150) scale(1.5)">
+              <g class="star-pop" style="--i:2">
+                <use href="#star" fill="#161616" stroke="#161616" stroke-width="21"/>
+                <use href="#star" fill="#EFCB6B" stroke="#EFCB6B" stroke-width="13" transform="translate(3 5)"/>
+                <use href="#star" fill="#FFF292" stroke="#FFF292" stroke-width="13"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-logo">
+        <span class="s1">Sparkle</span> <span class="amp">&amp;</span><br><span class="s2">Shine</span>
+      </p>
+      <p class="tagline">Where we make your order special!</p>
+    </div>
+
+    <nav aria-labelledby="footer-pages">
+      <h2 id="footer-pages">Pages</h2>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">How we do things</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#collab">Collab</a></li>
+        <li><a href="#contact">Our contact</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="#contact">Send us a message</a></li>
+        <li>Bronx, NYC</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap legal">
+    <span>&copy; <span id="year">2026</span> Sparkle &amp; Shine</span>
+    <span>Design for events in the Bronx, New York City</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- current year ---------- */
+  var y = document.getElementById("year");
+  if (y) y.textContent = new Date().getFullYear();
+
+  /* ---------- mobile menu ---------- */
+  var toggle = document.getElementById("menuToggle");
+  var nav    = document.getElementById("navMobile");
+
+  function setMenu(open){
+    toggle.setAttribute("aria-expanded", String(open));
+    nav.classList.toggle("is-open", open);
+  }
+  toggle.addEventListener("click", function(){
+    setMenu(toggle.getAttribute("aria-expanded") !== "true");
+  });
+  /* close after tapping a link, so the panel doesn't cover the section */
+  nav.addEventListener("click", function(e){
+    if (e.target.closest("a")) setMenu(false);
+  });
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape" && toggle.getAttribute("aria-expanded") === "true"){
+      setMenu(false);
+      toggle.focus();
+    }
+  });
+  /* if the viewport grows past the breakpoint, drop the open state */
+  var mq = window.matchMedia("(min-width:900px)");
+  (mq.addEventListener ? mq.addEventListener.bind(mq,"change") : mq.addListener.bind(mq))(function(){
+    if (mq.matches) setMenu(false);
+  });
+
+  /* ---------- reveal on scroll ---------- */
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var items  = document.querySelectorAll(".reveal");
+  if (reduce || !("IntersectionObserver" in window)){
+    items.forEach(function(el){ el.classList.add("is-in"); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){ en.target.classList.add("is-in"); io.unobserve(en.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    items.forEach(function(el){ io.observe(el); });
+  }
+
+  /* ---------- contact form ---------- */
+  var form   = document.getElementById("contactForm");
+  var status = document.getElementById("formStatus");
+  var btn    = document.getElementById("submitBtn");
+  if (!form) return;
+
+  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+  /* On success the form is swapped for a confirmation, so nobody is left
+     looking at fields they've already filled in and wondering whether it
+     sent. "Send another message" brings the empty form back. */
+  var done = document.getElementById("formDone");
+  var doneEmail = document.getElementById("doneEmail");
+  var sendAnother = document.getElementById("sendAnother");
+
+  function showConfirmation(email){
+    /* textContent, never innerHTML — this is whatever the visitor typed */
+    if (doneEmail) doneEmail.textContent = email || "your email";
+    status.textContent = "";
+    status.removeAttribute("data-state");
+    form.reset();
+    form.hidden = true;
+    done.hidden = false;
+    /* move focus so a screen reader announces the confirmation instead of
+       silently landing on a form that is no longer there */
+    done.focus();
+  }
+
+  if (sendAnother){
+    sendAnother.addEventListener("click", function(){
+      done.hidden = true;
+      form.hidden = false;
+      var first = document.getElementById("name");
+      if (first) first.focus();
+    });
+  }
+
+  /* The stars cheer once when a message actually goes through.
+     The class is taken off again afterwards so it can replay. */
+  var starArt = document.getElementById("starArt");
+  function cheerStars(){
+    if (!starArt) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    starArt.classList.remove("stars-cheer");
+    void starArt.offsetWidth;
+    starArt.classList.add("stars-cheer");
+    setTimeout(function(){ starArt.classList.remove("stars-cheer"); }, 1300);
+  }
+
+  function setError(id, msg){
+    var input = document.getElementById(id);
+    var slot  = document.getElementById(id + "-err");
+    if (slot) slot.textContent = msg || "";
+    if (input){
+      if (msg) input.setAttribute("aria-invalid","true");
+      else input.removeAttribute("aria-invalid");
+    }
+    return !msg;
+  }
+
+  function validate(){
+    var ok = true;
+    var name = form.name.value.trim();
+    var mail = form.email.value.trim();
+    var msg  = form.message.value.trim();
+
+    ok = setError("name", name ? "" : "Please tell us your name.") && ok;
+    ok = setError("email",
+          !mail ? "Please add an email so we can reply."
+        : !EMAIL_RE.test(mail) ? "That email doesn't look quite right."
+        : "") && ok;
+    ok = setError("message", msg ? "" : "Tell us a little about what you need.") && ok;
+
+    if (!ok){
+      var bad = form.querySelector('[aria-invalid="true"]');
+      if (bad) bad.focus();
+    }
+    return ok;
+  }
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    status.textContent = "";
+    status.removeAttribute("data-state");
+    if (!validate()) return;
+
+    btn.disabled = true;
+    var original = btn.textContent;
+    btn.textContent = "Sending…";
+
+    fetch(form.action, {
+      method: "POST",
+      headers: { "Accept": "application/json" },
+      body: new FormData(form)
+    })
+    .then(function(res){
+      return res.text().then(function(raw){
+        var data = {};
+        try { data = JSON.parse(raw); } catch (e) { /* not JSON — see below */ }
+        if (!res.ok){
+          /* Visitors get a friendly line; this is for whoever is setting the
+             site up. A non-JSON body means /api/contact answered with
+             something that isn't the contact function — usually the 404 page,
+             which means the function didn't deploy. */
+          console.error(
+            "[contact] " + res.status + " " + res.statusText +
+            (data.error ? " — " + data.error
+                        : " — response was not JSON, so it did not come from " +
+                          "functions/api/contact.js. Check that the function deployed: " +
+                          "open /api/contact directly in a browser."),
+            raw.slice(0, 300)
+          );
+        }
+        return { ok: res.ok, status: res.status, data: data };
+      });
+    })
+    .then(function(r){
+      if (r.ok){
+        showConfirmation(form.email.value.trim());
+        cheerStars();
+      } else {
+        status.setAttribute("data-state","error");
+        status.textContent = (r.data && r.data.error)
+          ? r.data.error
+          : (r.status === 404 || r.status === 405)
+            ? "The form isn't connected yet. Please try again later."
+            : "Something went wrong sending that. Please try again in a moment.";
+      }
+    })
+    .catch(function(){
+      status.setAttribute("data-state","error");
+      status.textContent = "We couldn't reach the server. Please check your connection and try again.";
+    })
+    .finally(function(){
+      btn.disabled = false;
+      btn.textContent = original;
+    });
+  });
+
+  /* clear an error as soon as the person starts fixing it */
+  ["name","email","message"].forEach(function(id){
+    var el = document.getElementById(id);
+    if (el) el.addEventListener("input", function(){
+      if (el.getAttribute("aria-invalid") === "true") setError(id, "");
+    });
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "name":"Sparkle & Shine",
+  "description":"Design service in the Bronx, NYC making custom invitations, flyers and event designs to order.",
+  "url":"https://sparkleandshine.party/",
+  "image":"https://sparkleandshine.party/assets/og.jpg",
+  "areaServed":{"@type":"City","name":"New York City"},
+  "address":{"@type":"PostalAddress","addressLocality":"Bronx","addressRegion":"NY","addressCountry":"US"},
+  "knowsAbout":["Invitation design","Flyer design","Event design"]
+}
+</script>
+
+</body>
+</html>
